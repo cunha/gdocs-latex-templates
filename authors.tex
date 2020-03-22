@@ -1,0 +1,31 @@
+\makeatletter
+\def\@typeset@author@bx{%
+	\global\setbox\author@bx=\vtop{\noindent\centering
+		\@authorfont
+			Yi-Ching Chiu,$^{\star\dagger}$
+			Brandon Schlinker,$^{\star\dagger}$
+			Niky Riga,$^\star$
+			Xintong Hu,$^\star$
+			James Quinn,$^\star$
+			\break
+			Italo Cunha,$^\sharp$
+			Ramesh Govindan,$^\dagger$
+			Ethan Katz-Bassett$^\ddagger$
+		\medskip
+		\par\noindent
+		\@affiliationfont
+			$^\star$ Facebook \quad
+			$^\dagger$ University of Southern California \break
+			$^\ddagger$ Columbia University \quad
+			$^\sharp$ Universidade Federal de Minas Gerais
+	}
+	\box\author@bx
+}
+\makeatother
+
+\makeatletter
+\def\@mkauthors@iii{\hsize=\textwidth
+	\global\setbox\mktitle@bx=\vbox{\noindent
+	\box\mktitle@bx\par\medskip%\leavevmode
+	\@typeset@author@bx\par\bigskip\bigskip\leavevmode}}
+\makeatother

@@ -1,0 +1,86 @@
+%\usepackage{draftwatermark}
+%\SetWatermarkText{DRAFT}
+%\SetWatermarkScale{1}
+\PassOptionsToPackage{usenames,dvipsnames}{xcolor}
+\usepackage{xspace} % auto-eats spaces as needed
+\usepackage{verbatim} % to support to-dos / comment environment
+\usepackage{url} % links to bib items
+\usepackage{authblk} % optimized author list (uses less space)
+\usepackage{amsmath, amssymb} % math formulas, etc.
+\usepackage{graphicx} % PDF, EPS, and many other graphics formats
+\usepackage{amsmath, amssymb} % math formulas, etc.
+\usepackage{multirow} % easier tables
+\usepackage{setspace} % set spacing between lines
+\usepackage[all]{nowidow}
+\usepackage{booktabs}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{subfigure}
+\usepackage{makecell}
+%\usepackage{cite} % improved citations
+%\usepackage{newtxtext,newtxmath} % uses Times (better for ACM)
+
+%\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+%\usepackage{todonotes} % todos in PDF
+%\usepackage[disable]{todonotes} % disabled todos
+
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont\
+
+%\usepackage{tabulary}
+%\usepackage{arydshln}
+
+\usepackage{xparse}
+\usepackage{multirow}
+
+% Simple ToDos
+%\newcommand\figcomment[1]{\textcolor{red}{#1}}
+\newcommand\figcomment[1]{}
+
+% configure cref
+\usepackage{cleveref}
+%\crefformat{section}{(\S#2#1#3)}
+%\crefname{section}{\S}{\S\S}
+\crefformat{section}{#2\S#1#3}
+\Crefformat{section}{#2Section~#1#3}
+\crefname{section}{\S}{\S\S}
+\Crefname{section}{Section}{Sections}
+\crefname{equation}{Equation}{Equations}
+\Crefname{equation}{Equation}{Equations}
+\crefname{table}{Table}{Tables}
+\Crefname{table}{Table}{Tables}
+\crefname{figure}{Figure}{Figures}
+\Crefname{figure}{Figure}{Figures}
+
+% force consistent sentence spacing
+% \frenchspacing
+
+% customize list setup
+% \usepackage{enumitem} % control itemize, enumerate, description layouts
+% \setlist{itemsep=1pt, topsep=0.5em, leftmargin=1.0em}
+
+% subheaders
+\newtheorem{Theorem}{Theorem}
+\newtheorem{Lemma}{Lemma}
+\newtheorem{Problem}{Problem}
+\newtheorem{Definition}{Definition}
+
+% caption setup
+\usepackage{caption}
+% \setlength{\abovecaptionskip}{-5pt}
+% \setlength{\belowcaptionskip}{-8pt}
+% \renewcommand{\captionfont}{\small\em}
+
+% float parameters
+% needed to create an algorithm float
+% \usepackage{float}
+% \renewcommand{\topfraction}{0.99}
+% \renewcommand{\dbltopfraction}{0.99}
+% \renewcommand{\bottomfraction}{0.99}
+% \renewcommand{\floatpagefraction}{0.99}
+% \renewcommand{\dblfloatpagefraction}{0.99}
+% \setcounter{totalnumber}{99}
+% \setcounter{topnumber}{99}
+% \setcounter{dbltopnumber}{99}
